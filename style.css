@@ -148,3 +148,33 @@ h2{
 .header__socials span:hover a{
     color: var(--secondary-color);
 }
+
+.types__container{
+    background-color: var(--primary-color-dark);
+}
+
+.types__grid{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.types_card{
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.types__card h4{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.types__card p{
+    padding-bottom: 1rem;
+    color: var(--white);
+    border-bottom: 5px solid var(--primary-color);
+}
