@@ -53,7 +53,7 @@ nav{
 .link a{
     position: relative;
     padding-bottom: 5px;
-    font_size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--primary-color-dark);
 }
@@ -110,4 +110,41 @@ h2{
     color: var(--white);
     background-color: var(--secondary-color);
     cursor: pointer;
+}
+
+.header__image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left:calc(50% - 5rem);
+    padding-top: 6rem;
+    background-color: var(--white);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.header__image img{
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+}
+
+.header__socials{
+    right: 0;
+    top: 50%;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__socials span a{
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.header__socials span:hover a{
+    color: var(--secondary-color);
 }
